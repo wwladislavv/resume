@@ -13,30 +13,32 @@ function App() {
                     </div>
                 </div>
 
-                <div className="code__body">
-                    Vladyslav K.
+                <div className="code__body text-white-darker">
+                    <span className="heading text-cyan">Vladyslav K.</span>
                     <br />
                     Frontend Developer
                     <br />
                     <br />
-                    Summary:
+                    <span className="text-green">About me:</span>
                     <br />
                     --------------------------
                     <br />
-                    I'm a seasoned Senior Frontend Developer with over 7 years of hands-on experience in the full software development lifecycle. My expertise lies in designing, developing, testing, and deploying both web and mobile applications. I excel in harnessing the power of JavaScript libraries and frameworks, particularly React and Vue, to successfully deliver projects of varying complexities. I am known for my positive attitude and the ability to make sound decisions even in high-pressure situations.
+                    <span>
+                        I have over 7 years of hands-on expertise in the whole software development lifecycle as a seasoned senior frontend developer. Web and mobile application development, testing, and deployment are my areas of competence. I excel in successfully using JavaScript libraries and frameworks, especially React, to complete projects of various complexity levels. I have a reputation for having a good outlook and b`eing able to make wise decisions despite being under pressure.
+                    </span>
                     <br />
                     <br />
                     <br />
-                    Work Experience:
+                    <span className="text-green">Work Experience:</span>
                     <br />
                     --------------------------
                     <br />
-                    **Intersog**
+                    <span className="text-blue">**Intersog**</span>
                     <br />
                     June 2018 - Present
                     <br />
                     <br />
-                    *Project 1: GDPR Solution*
+                    <span className="text-magenta">*Project 1: GDPR Solution*</span>
                     <br />
                     - Utilized HTML, CSS, JavaScript, React, Redux, Webpack, and RESTful APIs to develop a GDPR-related solution that processes personal information using artificial intelligence.
                     <br />
@@ -46,7 +48,7 @@ function App() {
                     - Developed new application modules and various UI components.
                     <br />
                     <br />
-                    *Project 2: Financial Management Platform*
+                    <span className="text-magenta">*Project 2: Financial Management Platform*</span>
                     <br />
                     - Assisted the backend development team by providing frontend solutions using JavaScript, TypeScript, HTML, CSS, React, and Vue.
                     <br />
@@ -60,7 +62,7 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    **CyberVision**
+                    <span className="text-blue">**CyberVision**</span>
                     <br />
                     August 2017 - May 2018
                     <br />
@@ -69,7 +71,7 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    **LENAL**
+                    <span className="text-blue">**LENAL**</span>
                     <br />
                     July 2016 - July 2017
                     <br />
@@ -82,7 +84,7 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    **Freelance (Self-employed)**
+                    <span className="text-blue">**Freelance (Self-employed)**</span>
                     <br />
                     November 2015 - July 2016
                     <br />
@@ -91,29 +93,29 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    Skills:
+                    <span className="text-green">Skills:</span>
                     <br />
                     --------------------------
                     <br />
-                    - Languages: JavaScript, TypeScript, HTML/CSS
+                    <span className="text-magenta">- Languages:</span> JavaScript, TypeScript, HTML/CSS
                     <br />
-                    - Technologies: React.js, Redux, Node.js, Vue.js, React Native, jQuery
+                    <span className="text-magenta">- Technologies:</span> React.js, Redux, Node.js, Vue.js, React Native, jQuery
                     <br />
-                    - CSS libraries: Bootstrap, Materialize, etc.
+                    <span className="text-magenta">- CSS libraries:</span> Bootstrap, Materialize, etc.
                     <br />
-                    - Preprocessors: Jade (Pug), SASS/SCSS.
+                    <span className="text-magenta">- Preprocessors:</span> Jade (Pug), SASS/SCSS.
                     <br />
-                    - VCS: GIT (GitHub, Bitbucket, GitLab etc…).
+                    <span className="text-magenta">- VCS:</span> GIT (GitHub, Bitbucket, GitLab etc…).
                     <br />
-                    - Build tools: Webpack, Vite.
+                    <span className="text-magenta">- Build tools:</span> Webpack, Vite.
                     <br />
-                    - SBS: Gulp.
+                    <span className="text-magenta">- SBS:</span> Gulp.
                     <br />
-                    - Experienced in integrating with RESTful APIs.
+                    <span className="text-magenta">- Experienced</span> in integrating with RESTful APIs.
                     <br />
                     <br />
                     <br />
-                    Education:
+                    <span className="text-green">Education:</span>
                     <br />
                     --------------------------
                     <br />
