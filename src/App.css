@@ -36,7 +36,6 @@
     overflow-y: auto;
     word-wrap: normal;
     background: none;
-    color: var(--color-white);
     -webkit-hyphens: none;
     hyphens: none;
     line-height: 1.5;

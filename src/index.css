@@ -3,6 +3,17 @@
   --color-white: #ffffff;
   --color-background: #444654;
   --color-grey: #343541;
+  --color-white-darker: #abb2bf;
+  --color-red-light: #e06c75;
+  --color-red-dark: #be5046;
+  --color-green: #98c379;
+  --color-yellow-light: #e5c07b;
+  --color-yellow-dark: #d19a66;
+  --color-blue: #61afef;
+  --color-magenta: #c678dd;
+  --color-cyan: #56b6c2;
+  --color-gutter-grey: #4b5263;
+  --color-comment-grey: #5c6370;
 
   font-family: 'Noto Sans Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -80,4 +91,47 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.text-black {
+  color: var(--color-black);
+}
+.text-white {
+  color: var(--color-white);
+}
+.text-grey {
+  color: var(--color-grey);
+}
+.text-white-darker {
+  color: var(--color-white-darker);
+}
+.text-red-light {
+  color: var(--color-red-light);
+}
+.text-red-dark {
+  color: var(--color-red-dark);
+}
+.text-green {
+  color: var(--color-green);
+}
+.text-yellow-light {
+  color: var(--color-yellow-light);
+}
+.text-yellow-dark {
+  color: var(--color-yellow-dark);
+}
+.text-blue {
+  color: var(--color-blue);
+}
+.text-magenta {
+  color: var(--color-magenta);
+}
+.text-cyan {
+  color: var(--color-cyan);
+}
+.text-gutter-grey {
+  color: var(--color-gutter-grey);
+}
+.text-comment-grey {
+  color: var(--color-comment-grey);
 }
