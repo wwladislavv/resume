@@ -8,13 +8,17 @@ function App() {
         <div className="container">
             <div className="code__container">
                 <div className="code__head">
-                    <span>Resume</span>
-                    <div className="code__controls">
-                    </div>
+                    <nav className="code__nav">
+                        <a className="text-green" href="#about">About me</a>
+                        <a className="text-green" href="#experience">Experience</a>
+                        <a className="text-green" href="#skills">Skills & Education</a>
+                    </nav>
+
+                    <div></div>
                 </div>
 
                 <div className="code__body text-white-darker">
-                    <span className="heading text-cyan">Vladyslav K.</span>
+                    <span id="about" className="heading text-cyan">Vladyslav K.</span>
                     <br />
                     Frontend Developer
                     <br />
@@ -29,7 +33,7 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    <span className="text-green">Work Experience:</span>
+                    <span id="experience" className="text-green">Work Experience:</span>
                     <br />
                     --------------------------
                     <br />
@@ -93,7 +97,7 @@ function App() {
                     <br />
                     <br />
                     <br />
-                    <span className="text-green">Skills:</span>
+                    <span id="skills" className="text-green">Skills:</span>
                     <br />
                     --------------------------
                     <br />
@@ -111,11 +115,11 @@ function App() {
                     <br />
                     <span className="text-magenta">- SBS:</span> Gulp.
                     <br />
-                    <span className="text-magenta">- Experienced</span> in integrating with RESTful APIs.
+                    <span className="text-magenta">- Experienced</span> in integrating with both RESTful and GraphQL APIs.
                     <br />
                     <br />
                     <br />
-                    <span className="text-green">Education:</span>
+                    <span id="education" className="text-green">Education:</span>
                     <br />
                     --------------------------
                     <br />
