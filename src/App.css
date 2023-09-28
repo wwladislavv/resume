@@ -34,12 +34,21 @@
     padding: 1rem;
     overflow: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
     word-wrap: normal;
     background: none;
     -webkit-hyphens: none;
     hyphens: none;
     line-height: 1.5;
     text-align: left;
+
+    & .heading {
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
 }
 
 .code__nav {
@@ -47,7 +56,7 @@
         display: inline-block;
         padding: .2rem .5rem;
         margin: 0 .25rem;
-        font-size: .75rem;
+        font-size: .85rem;
         line-height: 1rem;
         color: var(--color-green);
         text-decoration: none;
@@ -59,5 +68,17 @@
     & a.active {
         color: var(--color-green);
         border-bottom: 1px dashed var(--color-white-darker);
+    }
+}
+
+.code__contacts {
+    & a {
+        display: inline-block;
+        padding: .2rem .5rem;
+        margin: 0 .25rem;
+        font-size: 1.3rem;
+        line-height: 1rem;
+        text-decoration: none;
+        transition: color .25s;
     }
 }
