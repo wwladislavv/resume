@@ -79,7 +79,7 @@ function App() {
                     <br />
                     <span className="text-magenta">*Project 2: Financial Management Platform*</span>
                     <br />
-                    - Assisted the backend development team by providing frontend solutions using JavaScript, TypeScript, HTML, CSS, React, and Vue.
+                    - Assisted the backend development team by providing frontend solutions using JavaScript, TypeScript, React, and Vue.
                     <br />
                     - Developed frontend solutions using RESTful APIs and GraphQL.
                     <br />
@@ -96,7 +96,7 @@ function App() {
                     August 2017 - May 2018
                     <br />
                     <br />
-                    - Worked on IoT projects, specializing in the development of visualization and interactive UI components using HTML, CSS, JavaScript, React, Redux, Angular 4+, RxJS, Webpack, and Git.
+                    - Worked on IoT projects, specializing in the development of visualization and interactive UI components using TypeScript, React, Redux, Angular 4+, RxJS, Webpack, and Git.
                     <br />
                     <br />
                     <br />
@@ -109,7 +109,7 @@ function App() {
                     <br />
                     - Implemented code rules and style guides.
                     <br />
-                    - Successfully completed and maintained large-scale e-commerce projects using HTML, CSS, JavaScript, jQuery, Phonegap, Gulp, and Git.
+                    - Successfully completed and maintained large-scale e-commerce projects using HTML, CSS, JavaScript, Phonegap, Gulp, and Git.
                     <br />
                     <br />
                     <br />
@@ -128,17 +128,15 @@ function App() {
                     <br />
                     <span className="text-magenta">- Languages:</span> JavaScript, TypeScript, HTML/CSS
                     <br />
-                    <span className="text-magenta">- Technologies:</span> React.js, Redux, Node.js, Vue.js, React Native, jQuery
+                    <span className="text-magenta">- Technologies:</span> React.js, Redux, Node.js, Vue.js, React Native
                     <br />
-                    <span className="text-magenta">- CSS libraries:</span> Bootstrap, Materialize, etc.
+                    <span className="text-magenta">- CSS libraries:</span> Tailwind CSS, Bootstrap, Materialize, Fluent UI etc.
                     <br />
                     <span className="text-magenta">- Preprocessors:</span> Jade (Pug), SASS/SCSS.
                     <br />
-                    <span className="text-magenta">- VCS:</span> GIT (GitHub, Bitbucket, GitLab etc…).
+                    <span className="text-magenta">- VCS:</span> GIT (GitHub, Bitbucket, GitLab, Azureetc…).
                     <br />
-                    <span className="text-magenta">- Build tools:</span> Webpack, Vite.
-                    <br />
-                    <span className="text-magenta">- SBS:</span> Gulp.
+                    <span className="text-magenta">- Build tools:</span> Webpack, Vite, Gulp.
                     <br />
                     <span className="text-magenta">- Experienced</span> in integrating with both RESTful and GraphQL APIs.
                     <br />
