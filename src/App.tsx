@@ -14,7 +14,32 @@ function App() {
                         <a className="text-green" href="#skills">Skills & Education</a>
                     </nav>
 
-                    <div></div>
+                    <div className="code__contacts">
+                        <a
+                            className="text-cyan text-white-active"
+                            href="mailto:nairbresom@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon-mail" />
+                        </a>
+                        <a
+                            className="text-cyan text-white-active"
+                            href="https://linkedin.com/in/vladyslav-koponkin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon-linkedin" />
+                        </a>
+                        <a
+                            className="text-cyan text-white-active"
+                            href="https://github.com/wwladislavv/resume"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon-github" />
+                        </a>
+                    </div>
                 </div>
 
                 <div className="code__body text-white-darker">
