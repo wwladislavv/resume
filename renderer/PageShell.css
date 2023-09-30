@@ -1,0 +1,179 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-background: #444654;
+    --color-grey: #343541;
+    --color-white-darker: #abb2bf;
+    --color-red-light: #e06c75;
+    --color-red-dark: #be5046;
+    --color-green: #98c379;
+    --color-yellow-light: #e5c07b;
+    --color-yellow-dark: #d19a66;
+    --color-blue: #61afef;
+    --color-magenta: #c678dd;
+    --color-cyan: #56b6c2;
+    --color-gutter-grey: #4b5263;
+    --color-comment-grey: #5c6370;
+
+    font-family: 'Noto Sans Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--color-background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+#react-root {
+    width: 100%;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+.text-black,
+.text-black-active:hover,
+.text-black-active:focus,
+.text-black-active.active {
+    color: var(--color-black);
+}
+.text-white,
+.text-white-active:hover,
+.text-white-active:focus,
+.text-white-active.active {
+    color: var(--color-white);
+}
+.text-grey,
+.text-grey-active:hover,
+.text-grey-active:focus,
+.text-grey-active.active {
+    color: var(--color-grey);
+}
+.text-white-darker,
+.text-white-darker-active:hover,
+.text-white-darker-active:focus,
+.text-white-darker-active.active {
+    color: var(--color-white-darker);
+}
+.text-red-light,
+.text-red-light-active:hover,
+.text-red-light-active:focus,
+.text-red-light-active.active {
+    color: var(--color-red-light);
+}
+.text-red-dark,
+.text-red-dark-active:hover,
+.text-red-dark-active:focus,
+.text-red-dark-active.active {
+    color: var(--color-red-dark);
+}
+.text-green,
+.text-green-active:hover,
+.text-green-active:focus,
+.text-green-active.active {
+    color: var(--color-green);
+}
+.text-yellow-light,
+.text-yellow-light-active:hover,
+.text-yellow-light-active:focus,
+.text-yellow-light-active.active {
+    color: var(--color-yellow-light);
+}
+.text-yellow-dark,
+.text-yellow-dark-active:hover,
+.text-yellow-dark-active:focus,
+.text-yellow-dark-active.active {
+    color: var(--color-yellow-dark);
+}
+.text-blue,
+.text-blue-active:hover,
+.text-blue-active:focus,
+.text-blue-active.active{
+    color: var(--color-blue);
+}
+.text-magenta,
+.text-magenta-active:hover,
+.text-magenta-active:focus,
+.text-magenta-active.active{
+    color: var(--color-magenta);
+}
+.text-cyan,
+.text-cyan-active:hover,
+.text-cyan-active:focus,
+.text-cyan-active.active {
+    color: var(--color-cyan);
+}
+.text-gutter-grey,
+.text-gutter-grey-active:hover,
+.text-gutter-grey-active:focus,
+.text-gutter-grey-active.active {
+    color: var(--color-gutter-grey);
+}
+.text-comment-grey,
+.text-comment-grey-active:hover,
+.text-comment-grey-active:focus,
+.text-comment-grey-active.active {
+    color: var(--color-comment-grey);
+}
