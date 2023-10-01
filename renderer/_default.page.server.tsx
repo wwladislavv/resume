@@ -38,9 +38,7 @@ async function render(pageContext: PageContextServer) {
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
     
         <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
-    
-<!--        <link rel="stylesheet" href="./assets/icomoon/style.css" type="text/css" />-->
-    
+        
         <title>${title}</title>
       </head>
       <body>
