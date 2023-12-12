@@ -2,38 +2,46 @@ import { Fragment } from 'react';
 import words from 'lodash.words';
 import capitalize from 'lodash.capitalize';
 
-import './style.css'
+import './style.css';
 
 export { Page }
 
-type Props = {
-    resumeData: {
-        name: string;
-        title: string;
-        summary: string;
-        skills: {
-            [key: string]: string | string[];
-        };
-        education: {
-            degree: string;
-            university: string;
-            faculty: string;
-        };
-        workExperience: {
-            company: string;
-            startDate: string;
-            endDate: string;
-            description?: string;
-            role: string;
-            projects?: {
-                description: string;
-                name: string;
-            }[];
-        }[];
-    }
+type Skill = string | string[];
+type Education = {
+    degree: string;
+    university: string;
+    faculty: string;
+};
+type Project = {
+    description: string;
+    name: string;
+};
+type WorkExperienceItem = {
+    company: string;
+    startDate: string;
+    endDate: string;
+    description?: string;
+    role: string;
+    projects?: Project[];
 };
 
-function Page({ resumeData }: Props) {
+export type ResumeData = {
+    name: string;
+    title: string;
+    summary: string;
+    skills: {
+        [key: string]: Skill;
+    };
+    education: Education;
+    workExperience: WorkExperienceItem[];
+};
+
+type Props = ResumeData;
+
+function Page({
+    name, title, summary,
+    workExperience, skills, education
+}: Props) {
     return (
         <>
             <div className="container">
@@ -41,8 +49,8 @@ function Page({ resumeData }: Props) {
                     <div className="code__head">
                         <nav className="code__nav">
                             <a className="text-green" href="#about">About me</a>
-                            <a className="text-green" href="#experience">Experience</a>
                             <a className="text-green" href="#skills">Skills & Education</a>
+                            <a className="text-green" href="#experience">Experience</a>
                         </nav>
 
                         <div className="code__contacts">
@@ -74,24 +82,37 @@ function Page({ resumeData }: Props) {
                     </div>
 
                     <div className="code__body text-white-darker">
-                        <span id="about" className="heading text-cyan">{resumeData.name}</span>
+                        <span id="about" className="heading text-cyan">{name}</span>
                         <br />
-                        {resumeData.title}
+                        {title}
                         <br />
                         <br />
                         <span className="text-green">About me:</span>
                         <br />
                         --------------------------
                         <br />
-                        {resumeData.summary}
+                        {summary}
                         <br />
+                        <br />
+                        <br />
+                        <span id="skills" className="text-green">Skills:</span>
+                        <br />
+                        --------------------------
+                        <br />
+                        {Object.entries(skills).map(([key, value]) => (
+                            <Fragment key={key}>
+                                <span className="text-magenta">- {words(key).map((value) =>  value.length === 3 ? value.toUpperCase() : capitalize(value)).join(' ')}: </span>
+                                {Array.isArray(value) ? value.join(', ') : value}
+                                <br />
+                            </Fragment>
+                        ))}
                         <br />
                         <br />
                         <span id="experience" className="text-green">Work Experience:</span>
                         <br />
                         --------------------------
                         <br />
-                        {resumeData.workExperience.map((workItem) => (
+                        {workExperience.map((workItem) => (
                             <Fragment key={workItem.company}>
                                 <span className="text-blue">**{workItem.company}**</span>
                                 <br />
@@ -128,28 +149,15 @@ function Page({ resumeData }: Props) {
                                 <br />
                             </Fragment>
                         ))}
-                        <span id="skills" className="text-green">Skills:</span>
-                        <br />
-                        --------------------------
-                        <br />
-                        {Object.entries(resumeData.skills).map(([key, value]) => (
-                            <Fragment key={key}>
-                                <span className="text-magenta">- {words(key).map((value) =>  value.length === 3 ? value.toUpperCase() : capitalize(value)).join(' ')}: </span>
-                                {Array.isArray(value) ? value.join(', ') : value}
-                                <br />
-                            </Fragment>
-                        ))}
-                        <br />
-                        <br />
                         <span id="education" className="text-green">Education:</span>
                         <br />
                         --------------------------
                         <br />
-                        {resumeData.education.degree}
+                        {education.degree}
                         <br />
-                        {resumeData.education.university}
+                        {education.university}
                         <br />
-                        {resumeData.education.faculty}
+                        {education.faculty}
                     </div>
                 </div>
             </div>
