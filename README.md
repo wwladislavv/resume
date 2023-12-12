@@ -4,6 +4,15 @@ Frontend Developer
 ## About me:
 I have over 7 years of hands-on expertise in the whole software development lifecycle as a seasoned senior frontend developer. Web and mobile application development, testing, and deployment are my areas of competence. I excel in successfully using JavaScript libraries and frameworks, especially React, to complete projects of various complexity levels. I have a reputation for having a good outlook and being able to make wise decisions despite being under pressure. 💪
 
+## Skills:
+- *Languages:* JavaScript, TypeScript, HTML/CSS
+- *Technologies:* React.js, Redux, Node.js, Vue.js, React Native
+- *CSS libraries:* Tailwind CSS, Bootstrap, Materialize, Fluent UI, etc.
+- *Preprocessors:* Jade (Pug), SASS/SCSS
+- *VCS:* GIT (GitHub, Bitbucket, GitLab, Azure, etc.)
+- *Build tools:* Webpack, Vite, Gulp
+- *Experienced in integrating with both* RESTful and GraphQL APIs.
+
 ## Work Experience:
 ### **Intersog**
 *Frontend Developer* (June 2018 - Present)
@@ -37,15 +46,6 @@ I have over 7 years of hands-on expertise in the whole software development life
 *Web Developer* (November 2015 - July 2016)
 
 - Developed web applications, websites, and digital solutions using HTML, CSS, JavaScript, jQuery, Gulp, and Git.
-
-## Skills:
-- *Languages:* JavaScript, TypeScript, HTML/CSS
-- *Technologies:* React.js, Redux, Node.js, Vue.js, React Native
-- *CSS libraries:* Tailwind CSS, Bootstrap, Materialize, Fluent UI, etc.
-- *Preprocessors:* Jade (Pug), SASS/SCSS
-- *VCS:* GIT (GitHub, Bitbucket, GitLab, Azure, etc.)
-- *Build tools:* Webpack, Vite, Gulp
-- *Experienced in integrating with both* RESTful and GraphQL APIs.
 
 ## Education:
 Bachelor of Science
