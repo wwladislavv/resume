@@ -82,7 +82,12 @@ function Page({
                     </div>
 
                     <div className="code__body text-white-darker">
-                        <span id="about" className="heading text-cyan">{name}</span>
+                        <h1
+                            id="about"
+                            className="heading text-cyan"
+                        >
+                            {name}
+                        </h1>
                         <br />
                         {title}
                         <br />
