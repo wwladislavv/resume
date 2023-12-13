@@ -8,7 +8,7 @@ import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import type { PageContextServer } from './types'
 
 async function render(pageContext: PageContextServer) {
-    const { Page, pageProps } = pageContext
+    const { Page, pageProps, screenshot } = pageContext;
     // This render() hook only supports SSR, see https://vike.dev/render-modes for how to modify render() to support SPA
     if (!Page) throw new Error('My render() hook expects pageContext.Page to be defined')
     const pageHtml = ReactDOMServer.renderToString(
@@ -19,8 +19,8 @@ async function render(pageContext: PageContextServer) {
 
     // See https://vike.dev/head
     const { documentProps } = pageContext.exports
-    const title = (documentProps && documentProps.title) || 'Vladyslav K.';
-    const desc = (documentProps && documentProps.description) || 'Resume app built with Vike.'
+    const title = (documentProps && documentProps.title) || 'Vladyslav Koponkin';
+    const desc = (documentProps && documentProps.description) || 'CV of an Frontend developer seeking a job'
 
     const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
@@ -32,6 +32,10 @@ async function render(pageContext: PageContextServer) {
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
+        
+        <meta property='og:title' content='Vladyslav Koponkin'/>
+        <meta property='og:image' content=":${screenshot || ''}"/>
+        <meta property='og:description' content="${desc}"/>
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

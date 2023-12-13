@@ -18,13 +18,14 @@ type Page = (pageProps: PageProps) => React.ReactElement
 type PageProps = Record<string, unknown>
 
 export type PageContextCustom = {
-    Page: Page
-    pageProps?: PageProps
-    urlPathname: string
+    Page: Page;
+    pageProps?: PageProps;
+    screenshot?: string;
+    urlPathname: string;
     exports: {
         documentProps?: {
-            title?: string
-            description?: string
+            title?: string;
+            description?: string;
         }
     }
 }
