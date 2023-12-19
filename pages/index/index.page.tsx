@@ -6,6 +6,8 @@ import './style.css';
 
 export { Page }
 
+const isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
+
 type Skill = string | string[];
 type Education = {
     degree: string;
@@ -130,7 +132,9 @@ function Page({
                                         <br />
                                         {projectItem.description.split('. ').map((description, index) => (
                                             <Fragment key={index}>
-                                                {`- ${description}`}
+                                                {isHTML(description)
+                                                    ? <span dangerouslySetInnerHTML={{__html: description}}/>
+                                                    : `- ${description}`}
                                                 <br />
                                             </Fragment>
                                         ))}
