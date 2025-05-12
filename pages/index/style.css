@@ -20,7 +20,7 @@
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--color-black);
+    /* background-color defined in media queries */
     border-radius: 0.375rem;
 }
 .code__head {
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    background-color: var(--color-grey);
+    /* background-color defined in media queries */
     border-top-left-radius: 0.375rem;
     border-top-right-radius: 0.375rem;
     font-size: .75rem;
@@ -75,7 +75,7 @@
     & a:focus,
     & a.active {
         color: var(--color-green);
-        border-bottom: 1px dashed var(--color-white-darker);
+        /* border-bottom defined in media queries */
     }
 }
 
@@ -111,5 +111,52 @@
     }
     .code__container {
         margin: 1rem 0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .code__container {
+        background-color: #fafafa; /* Atom One Light background */
+        border: 1px solid #dcdcdf; /* Atom One Light subtle border */
+    }
+    .code__head {
+        background-color: #eaeaeb; /* Atom One Light UI background */
+        color: #383a42; /* Atom One Light foreground */
+    }
+    .code__nav {
+        & a {
+            color: #50a14f; /* Atom One Light green */
+        }
+        & a:hover,
+        & a:focus,
+        & a.active {
+            color: #50a14f; /* Keep green on hover/active */
+            border-bottom: 1px dashed #383a42; /* Atom One Light foreground */
+        }
+    }
+    /* Add styles for code__contacts links if needed */
+    .code__contacts a {
+        color: #4078f2; /* Atom One Light blue */
+    }
+    .code__contacts a:hover,
+    .code__contacts a:focus {
+        color: #0184bc; /* Atom One Light cyan (or another accent) */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .code__container {
+        background-color: var(--color-black);
+    }
+    .code__head {
+        background-color: var(--color-grey);
+         /* Assuming default text color from PageShell is white-ish */
+    }
+    .code__nav {
+        & a:hover,
+        & a:focus,
+        & a.active {
+             border-bottom: 1px dashed var(--color-white-darker);
+        }
     }
 }
