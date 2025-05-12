@@ -19,7 +19,7 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color-scheme: light dark;
+    color-scheme: dark light;
     color: rgba(255, 255, 255, 0.87);
     background-color: var(--color-background);
 
@@ -91,89 +91,190 @@ button:focus-visible {
     button {
         background-color: #f9f9f9;
     }
+
+    .text-black,
+    .text-black-active:hover,
+    .text-black-active:focus,
+    .text-black-active.active {
+        /* Inverted for light theme */
+        color: var(--color-white);
+    }
+    .text-white,
+    .text-white-active:hover,
+    .text-white-active:focus,
+    .text-white-active.active {
+        /* Inverted for light theme */
+        color: var(--color-black);
+    }
+    .text-grey,
+    .text-grey-active:hover,
+    .text-grey-active:focus,
+    .text-grey-active.active {
+        /* Using a lighter grey for light theme */
+        color: var(--color-white-darker);
+    }
+    .text-white-darker,
+    .text-white-darker-active:hover,
+    .text-white-darker-active:focus,
+    .text-white-darker-active.active {
+        /* Using a darker grey for light theme */
+        color: var(--color-grey);
+    }
+    .text-red-light,
+    .text-red-light-active:hover,
+    .text-red-light-active:focus,
+    .text-red-light-active.active {
+        /* Using darker red for light theme */
+        color: var(--color-red-dark);
+    }
+    .text-red-dark,
+    .text-red-dark-active:hover,
+    .text-red-dark-active:focus,
+    .text-red-dark-active.active {
+        /* Using lighter red for light theme */
+        color: var(--color-red-light);
+    }
+    .text-green,
+    .text-green-active:hover,
+    .text-green-active:focus,
+    .text-green-active.active {
+        /* Keeping green, might need adjustment */
+        color: var(--color-green);
+    }
+    .text-yellow-light,
+    .text-yellow-light-active:hover,
+    .text-yellow-light-active:focus,
+    .text-yellow-light-active.active {
+        /* Using darker yellow for light theme */
+        color: var(--color-yellow-dark);
+    }
+    .text-yellow-dark,
+    .text-yellow-dark-active:hover,
+    .text-yellow-dark-active:focus,
+    .text-yellow-dark-active.active {
+         /* Using lighter yellow for light theme */
+        color: var(--color-yellow-light);
+    }
+    .text-blue,
+    .text-blue-active:hover,
+    .text-blue-active:focus,
+    .text-blue-active.active{
+        /* Keeping blue, might need adjustment */
+        color: var(--color-blue);
+    }
+    .text-magenta,
+    .text-magenta-active:hover,
+    .text-magenta-active:focus,
+    .text-magenta-active.active{
+        /* Keeping magenta, might need adjustment */
+        color: var(--color-magenta);
+    }
+    .text-cyan,
+    .text-cyan-active:hover,
+    .text-cyan-active:focus,
+    .text-cyan-active.active {
+        /* Keeping cyan, might need adjustment */
+        color: var(--color-cyan);
+    }
+    .text-gutter-grey,
+    .text-gutter-grey-active:hover,
+    .text-gutter-grey-active:focus,
+    .text-gutter-grey-active.active {
+         /* Using comment grey for light theme */
+        color: var(--color-comment-grey);
+    }
+    .text-comment-grey,
+    .text-comment-grey-active:hover,
+    .text-comment-grey-active:focus,
+    .text-comment-grey-active.active {
+        /* Using gutter grey for light theme */
+        color: var(--color-gutter-grey);
+    }
 }
 
-.text-black,
-.text-black-active:hover,
-.text-black-active:focus,
-.text-black-active.active {
-    color: var(--color-black);
-}
-.text-white,
-.text-white-active:hover,
-.text-white-active:focus,
-.text-white-active.active {
-    color: var(--color-white);
-}
-.text-grey,
-.text-grey-active:hover,
-.text-grey-active:focus,
-.text-grey-active.active {
-    color: var(--color-grey);
-}
-.text-white-darker,
-.text-white-darker-active:hover,
-.text-white-darker-active:focus,
-.text-white-darker-active.active {
-    color: var(--color-white-darker);
-}
-.text-red-light,
-.text-red-light-active:hover,
-.text-red-light-active:focus,
-.text-red-light-active.active {
-    color: var(--color-red-light);
-}
-.text-red-dark,
-.text-red-dark-active:hover,
-.text-red-dark-active:focus,
-.text-red-dark-active.active {
-    color: var(--color-red-dark);
-}
-.text-green,
-.text-green-active:hover,
-.text-green-active:focus,
-.text-green-active.active {
-    color: var(--color-green);
-}
-.text-yellow-light,
-.text-yellow-light-active:hover,
-.text-yellow-light-active:focus,
-.text-yellow-light-active.active {
-    color: var(--color-yellow-light);
-}
-.text-yellow-dark,
-.text-yellow-dark-active:hover,
-.text-yellow-dark-active:focus,
-.text-yellow-dark-active.active {
-    color: var(--color-yellow-dark);
-}
-.text-blue,
-.text-blue-active:hover,
-.text-blue-active:focus,
-.text-blue-active.active{
-    color: var(--color-blue);
-}
-.text-magenta,
-.text-magenta-active:hover,
-.text-magenta-active:focus,
-.text-magenta-active.active{
-    color: var(--color-magenta);
-}
-.text-cyan,
-.text-cyan-active:hover,
-.text-cyan-active:focus,
-.text-cyan-active.active {
-    color: var(--color-cyan);
-}
-.text-gutter-grey,
-.text-gutter-grey-active:hover,
-.text-gutter-grey-active:focus,
-.text-gutter-grey-active.active {
-    color: var(--color-gutter-grey);
-}
-.text-comment-grey,
-.text-comment-grey-active:hover,
-.text-comment-grey-active:focus,
-.text-comment-grey-active.active {
-    color: var(--color-comment-grey);
+@media (prefers-color-scheme: dark) {
+    .text-black,
+    .text-black-active:hover,
+    .text-black-active:focus,
+    .text-black-active.active {
+        color: var(--color-black);
+    }
+    .text-white,
+    .text-white-active:hover,
+    .text-white-active:focus,
+    .text-white-active.active {
+        color: var(--color-white);
+    }
+    .text-grey,
+    .text-grey-active:hover,
+    .text-grey-active:focus,
+    .text-grey-active.active {
+        color: var(--color-grey);
+    }
+    .text-white-darker,
+    .text-white-darker-active:hover,
+    .text-white-darker-active:focus,
+    .text-white-darker-active.active {
+        color: var(--color-white-darker);
+    }
+    .text-red-light,
+    .text-red-light-active:hover,
+    .text-red-light-active:focus,
+    .text-red-light-active.active {
+        color: var(--color-red-light);
+    }
+    .text-red-dark,
+    .text-red-dark-active:hover,
+    .text-red-dark-active:focus,
+    .text-red-dark-active.active {
+        color: var(--color-red-dark);
+    }
+    .text-green,
+    .text-green-active:hover,
+    .text-green-active:focus,
+    .text-green-active.active {
+        color: var(--color-green);
+    }
+    .text-yellow-light,
+    .text-yellow-light-active:hover,
+    .text-yellow-light-active:focus,
+    .text-yellow-light-active.active {
+        color: var(--color-yellow-light);
+    }
+    .text-yellow-dark,
+    .text-yellow-dark-active:hover,
+    .text-yellow-dark-active:focus,
+    .text-yellow-dark-active.active {
+        color: var(--color-yellow-dark);
+    }
+    .text-blue,
+    .text-blue-active:hover,
+    .text-blue-active:focus,
+    .text-blue-active.active{
+        color: var(--color-blue);
+    }
+    .text-magenta,
+    .text-magenta-active:hover,
+    .text-magenta-active:focus,
+    .text-magenta-active.active{
+        color: var(--color-magenta);
+    }
+    .text-cyan,
+    .text-cyan-active:hover,
+    .text-cyan-active:focus,
+    .text-cyan-active.active {
+        color: var(--color-cyan);
+    }
+    .text-gutter-grey,
+    .text-gutter-grey-active:hover,
+    .text-gutter-grey-active:focus,
+    .text-gutter-grey-active.active {
+        color: var(--color-gutter-grey);
+    }
+    .text-comment-grey,
+    .text-comment-grey-active:hover,
+    .text-comment-grey-active:focus,
+    .text-comment-grey-active.active {
+        color: var(--color-comment-grey);
+    }
 }
